@@ -1,24 +1,3 @@
-"
-" autoload/unite/sources/bear/ro.vim
-"   unite#sources#bear#ro#candidates
-"     [
-"       {
-"         word  : file_name
-"         kind  : file,
-"         action_path       : path,
-"         action_directory  : fnamemodify(v:val.path, ":p:h"),
-"       },
-"       {
-"         word  : command_name,
-"         kind  : command,
-"         action_command  : command_hoge
-"       },
-"       ...
-"     ]
-"
-"   source name => ro
-"
-
 call unite#util#set_default('g:gather_bear_execute_cmd', 'VimShellExecute')
 
 let s:source = {}
