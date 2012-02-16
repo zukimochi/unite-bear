@@ -1,5 +1,6 @@
 unite-sorce for BEAR (inspired by unite-rails)
 
+
 Usage:
   Unite bear/App
     : BEAR_HOME/App/
@@ -11,7 +12,7 @@ Usage:
     : BEAR_HOME/libs/
 
   Unite bear/Form
-    : BEAR_HOME/App/Form
+    : BEAR_HOME/App/Form/
 
   Unite bear/Page
     : BEAR_HOME/App/Page/
