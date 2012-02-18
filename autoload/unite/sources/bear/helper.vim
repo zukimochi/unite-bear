@@ -1,3 +1,32 @@
+function!unite#sources#bear#helper#gather_candidates_file_ignore_dir(path, ignore_dir)
+  if isdirectory(a:path)
+    let files = []
+    for f in split(globpath(a:path, '**/*.*'), '\n')
+      let ignore = 0
+      for i in (a:ignore_dir)
+        if f =~ i
+          let ignore = 1
+          break
+        endif
+      endfor
+      if ignore == 1
+        continue
+      endif
+      if isdirectory(f) | continue | endif
+      call add(files, {'name' : substitute(f, a:path. "/" , "", ""), 'path' : f})
+    endfor
+  else
+    let files = [{"name": fnamemodify(a:path, ":t"), "path" : a:path}]
+  endif
+
+  return map(files, '{
+        \ "word" : v:val.name,
+        \ "kind" : "file",
+        \ "action__path" : v:val.path,
+        \ "action__directory" : fnamemodify(v:val.path, ":p:h"),
+        \}')
+endfunction
+
 "
 " gather file candidates
 "
