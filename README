@@ -1,12 +1,16 @@
 unite-sorce for BEAR (inspired by unite-rails)
 
+bear-project:
+  http://code.google.com/p/bear-project/
 
 Usage:
   Unite bear/App
     : BEAR_HOME/App/
+      (igore directory: App/Form/, App/Page/, App/Ro/)
 
   Unite bear/htdocs
     : BEAR_HOME/htdocs/
+      (igore directory: htdocs/__bear/, htdocs/__edit/, __htdocs/panda/)
 
   Unite bear/libs
     : BEAR_HOME/libs/
@@ -26,11 +30,10 @@ Usage:
 
 Key Map example.
 
-nnoremap <silent> uba :<C-u>UniteWithInput bear/App<CR>
-nnoremap <silent> ubr :<C-u>UniteWithInput bear/Ro<CR>
-nnoremap <silent> ubv :<C-u>UniteWithInput bear/views<CR>
-nnoremap <silent> ubp :<C-u>UniteWithInput bear/Page<CR>
-nnoremap <silent> ubh :<C-u>UniteWithInput bear/htdocs<CR>
-nnoremap <silent> ubl :<C-u>UniteWithInput bear/libs<CR>
-nnoremap <silent> ubf :<C-u>UniteWithInput bear/Form<CR>
-
+nnoremap <silent> bh :<C-u>UniteWithInput bear/htdocs<CR
+nnoremap <silent> ba :<C-u>UniteWithInput bear/App<CR>
+nnoremap <silent> bf :<C-u>UniteWithInput bear/Form<CR>
+nnoremap <silent> bp :<C-u>UniteWithInput bear/Page<CR>
+nnoremap <silent> br :<C-u>UniteWithInput bear/Ro<CR>
+nnoremap <silent> bl :<C-u>UniteWithInput bear/libs<CR>
+nnoremap <silent> bv :<C-u>UniteWithInput bear/views<CR>
