@@ -10,7 +10,7 @@ Usage:
 
   Unite bear/htdocs
     : BEAR_HOME/htdocs/
-      (igore directory: htdocs/__bear/, htdocs/__edit/, __htdocs/panda/)
+      (igore directory: htdocs/__bear/, htdocs/__edit/, htdocs/__panda/)
 
   Unite bear/libs
     : BEAR_HOME/libs/
@@ -30,7 +30,7 @@ Usage:
 
 Key Map example.
 
-nnoremap <silent> bh :<C-u>UniteWithInput bear/htdocs<CR
+nnoremap <silent> bh :<C-u>UniteWithInput bear/htdocs<CR>
 nnoremap <silent> ba :<C-u>UniteWithInput bear/App<CR>
 nnoremap <silent> bf :<C-u>UniteWithInput bear/Form<CR>
 nnoremap <silent> bp :<C-u>UniteWithInput bear/Page<CR>
