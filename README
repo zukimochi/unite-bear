@@ -30,10 +30,22 @@ Usage:
 
 Key Map example.
 
-nnoremap <silent> bh :<C-u>UniteWithInput bear/htdocs<CR>
-nnoremap <silent> ba :<C-u>UniteWithInput bear/App<CR>
-nnoremap <silent> bf :<C-u>UniteWithInput bear/Form<CR>
-nnoremap <silent> bp :<C-u>UniteWithInput bear/Page<CR>
-nnoremap <silent> br :<C-u>UniteWithInput bear/Ro<CR>
-nnoremap <silent> bl :<C-u>UniteWithInput bear/libs<CR>
-nnoremap <silent> bv :<C-u>UniteWithInput bear/views<CR>
+"-------------------------------------------------------------------------------
+" unite.vim
+"-------------------------------------------------------------------------------
+nnoremap [unite] <Nop>
+nmap f [unite]
+
+nnoremap <silent> [unite]u :<C-u>Unite<Space>
+
+"-------------------------------------------------------------------------------
+" unite-bear
+"-------------------------------------------------------------------------------
+nnoremap <silent> [unite]bh :<C-u>UniteWithInput bear/htdocs<CR>
+nnoremap <silent> [unite]ba :<C-u>UniteWithInput bear/App<CR>
+nnoremap <silent> [unite]bf :<C-u>UniteWithInput bear/Form<CR>
+nnoremap <silent> [unite]bp :<C-u>UniteWithInput bear/Page<CR>
+nnoremap <silent> [unite]br :<C-u>UniteWithInput bear/Ro<CR>
+nnoremap <silent> [unite]bl :<C-u>UniteWithInput bear/libs<CR>
+nnoremap <silent> [unite]bv :<C-u>UniteWithInput bear/views<CR>
+
