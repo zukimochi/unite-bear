@@ -1,16 +1,18 @@
-unite-source for BEAR (inspired by unite-rails)
+unite-source for BEAR.Saturday (inspired by unite-rails)
 
 bear-project:
   http://code.google.com/p/bear-project/
+github:
+  https://github.com/koriym/BEAR.Saturday
 
 Usage:
   Unite bear/App
     : BEAR_HOME/App/
-      (igore directory: App/Form/, App/Page/, App/Ro/)
+      (ignore directory: App/Form/, App/Page/, App/Ro/)
 
   Unite bear/htdocs
     : BEAR_HOME/htdocs/
-      (igore directory: htdocs/__bear/, htdocs/__edit/, htdocs/__panda/)
+      (ignore directory: htdocs/__bear/, htdocs/__edit/, htdocs/__panda/)
 
   Unite bear/libs
     : BEAR_HOME/libs/
